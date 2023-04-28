@@ -27,5 +27,3 @@ jobs:
         context: .
         push: true
         tags: suveta/tp1devops:1.0.0
-         
-
