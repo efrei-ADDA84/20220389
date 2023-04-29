@@ -5,10 +5,6 @@ from sys import argv
 
 
 app = Flask(__name__)
-
-
- 
-
 @app.route("/", methods= ["GET"])
 def result() :
     lat = request.args.get('lat')
