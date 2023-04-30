@@ -23,12 +23,12 @@ Le langage de programmation utilisé pour coder le wrapper est Python. Le choix 
 ### 2.2) Les librairies
 - <b> requests</b> : une libraire HTTP pour Python qui permet de rendre les requêtes HTTP plus simple à manipuler.
 
-- <b> sys </b> : Nous avons utilé la fonction <I>argv</I> de la librairie <b>sys</b> pour récupérer les arguments passés en paramètre lors de l'appel de la fonction.   
+- <b> sys </b> : Nous avons utilisé la fonction <I>argv</I> de la librairie <b>sys</b> pour récupérer les arguments passés en paramètre lors de l'appel de la fonction.   
 exemple :  
  - `lat = argv[1]` permet de récupérer le premier élément passé en paramètre.  
 
 ### 2.3) URL utilisé  
-Après avoir récupérer les paramètres dans les variables `lat`, `lon` et `API_KEY`, nous allons utiliser cet url pour avoir les données.  
+Après avoir récupéré les paramètres dans les variables `lat`, `lon` et `API_KEY`, nous allons utiliser cet url pour avoir les données.  
 
 - `lat` indique la latitude
 - `long` indique la longitude
@@ -71,7 +71,7 @@ On se met dans le répertoire où on a le Dockerfile et on exécute la commande 
 
 - La première étape est de tagger notre image :
 `docker tag tp1:1.0.0 suveta/tp1devops:1.0.0`
-- La deuxième étape consiste est de connecter à notre registry pour push l'image : `docker login -u suveta`
+- La deuxième étape consiste à se connecter à notre registry pour push l'image : `docker login -u suveta`
 - A la troisième étape, nous allons push l'image dans notre registry : `docker push suveta/tp1devops:1.0.0`
 
 ## 4) <u>Vérification</u>
