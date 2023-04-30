@@ -26,7 +26,7 @@ Le langage de programmation utilisé pour coder le wrapper est Python. Le choix 
 
 - <b> requests</b> : une libraire HTTP pour Python qui permet de rendre les requêtes HTTP plus simple à manipuler.
 
-- <b> sys </b> : Nous avons utilé la fonction <I>argv</I> de la librairie <b>sys</b> pour récupérer les arguments passés en paramètre lors de l'appel de la fonction.   
+- <b> sys </b> : Nous avons utilisé la fonction <I>argv</I> de la librairie <b>sys</b> pour récupérer les arguments passés en paramètre lors de l'appel de la fonction.   
 exemple :  
  - `lat = argv[1]` permet de récupérer le premier élément passé en paramètre.  
 
@@ -37,7 +37,7 @@ exemple :
 - On définit ensuite la fonction `result`. On récupère  la latitude `lat`et la longitude `lon` depuis l'URL grâce à la fonction `request.args.get('---')` et `API_KEY` est donnée lors de l'appel de la fonction.  
 - `lat` indique la latitude
 - `long` indique la longitude
-- `API_KEY` indique la clé secrète pour pouvoir récupérer les données grâce à l'API.
+- `API_KEY` indique la clé secrète pour pouvoir récupérer les données grâce à l'API. On la passe pendant l'appel.
 
 
 url = "https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={argv[1]}"
