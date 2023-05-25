@@ -1,5 +1,5 @@
 
-name: Deploy Docker Image in Azure
+name: Deploy Docker Image in Azure Container
 on: [push]
 jobs:
     build-and-deploy:
@@ -34,4 +34,4 @@ jobs:
             registry-username: ${{ secrets.REGISTRY_USERNAME }}
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
             name: 20220389
-            location: 'France Central'
+            location: 'france central'
