@@ -1,6 +1,7 @@
 
 name: Deploy Docker Image in Azure Container
 on: [push]
+
 jobs:
     build-and-deploy:
         runs-on: ubuntu-latest
@@ -37,4 +38,9 @@ jobs:
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
             name: 20220389
             location: 'france central'
+            environment-variables : |
+            - name : MY_ENV_VAR
+              value : myenvvalue
+            - name :api_key
+              value : ${{ secrets.API_WEATHER_KEY }}
           
