@@ -1,5 +1,5 @@
 
-name: Deploy Docker Image in Azure Container
+name: Deploy Docker Image in Microsoft Azure Container 
 on: [push]
 
 jobs:
