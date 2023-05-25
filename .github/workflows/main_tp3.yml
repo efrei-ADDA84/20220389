@@ -38,6 +38,6 @@ jobs:
             registry-password: ${{ secrets.REGISTRY_PASSWORD }}
             name: 20220389
             location: 'france central'
-            port : 8081
-            environment-variables : name : api_key = ${{ secrets.API_WEATHER_KEY }}
+            ports : 8081
+            environment-variables :  api_key = ${{ secrets.API_WEATHER_KEY }}
           
