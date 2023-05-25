@@ -13,6 +13,7 @@ def result() :
     
     return requests.get(url).json()
     
+    
 
 
 if __name__ == '__main__' :
