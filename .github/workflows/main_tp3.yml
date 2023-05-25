@@ -39,8 +39,8 @@ jobs:
             name: 20220389
             location: 'france central'
             environment-variables : |
-            - name : MY_ENV_VAR
-              value : myenvvalue
-            - name :api_key
-              value : ${{ secrets.API_WEATHER_KEY }}
+              - name : MY_ENV_VAR
+                value : myenvvalue
+              - name :api_key
+                value : ${{ secrets.API_WEATHER_KEY }}
           
