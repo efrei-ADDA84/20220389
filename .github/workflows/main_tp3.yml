@@ -1,16 +1,13 @@
 
 name: Deploy Docker Image in Azure
-on:
-  push:
-    branches: [ "main" ]
+on: [push]
 jobs:
     build-and-deploy:
-        name : Build container and deploy the container
         runs-on: ubuntu-latest
         steps:
         
         - name: 'Checkout GitHub Action'
-          uses: actions/checkout@v3
+          uses: actions/checkout@main
           
         - name: 'Login via Azure CLI'
           uses: azure/login@v1
