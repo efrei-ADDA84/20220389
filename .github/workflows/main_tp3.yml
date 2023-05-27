@@ -3,12 +3,16 @@ name: Deploy Docker Image in Microsoft Azure Container
 on: [push]
 
 jobs:
+ 
     build-and-deploy:
         runs-on: ubuntu-latest
         steps:
         
         - name: 'Checkout GitHub Action'
-          uses: actions/checkout@main
+        - uses: actions/checkout@v3
+        - uses: hadolint/hadolint-action@v3.1.0
+            with:
+      dockerfile: ./tp3/Dockerfile 
           
         - name: 'Login via Azure CLI'
           uses: azure/login@v1
@@ -40,4 +44,6 @@ jobs:
             location: 'france central'
             ports: 8081
             environment-variables: API_KEY=${{ secrets.API_WEATHER_KEY }}
+
+        
           
