@@ -162,18 +162,24 @@ mais sans le port, la commande ne s'effectuait pas.
 
 - Aucune donnée sensible sont dans le code. Ils sont tous dans les secrets de GitHub
 
-- La commande pour vérifier si notre Dockerfile est bien rédigé. on a utilisé la commande `docker run --rm -i hadolint/hadolint < Dockerfile`. On a eu 0 erreurs.
+- Pour Hadolint, nous avons ajouter directement dans le GitHub workflow.
+```yml
+ - name: 'Hadolint for check the code' 
+          uses: hadolint/hadolint-action@v3.1.0
+          with:
+              dockerfile: ./tp3/Dockerfile 
+```
+
+Le workflow s'est terminé sans erreurs
 
 ## 6) <u>L'intêret de GitHub Actions </u>
 Les avantages de GitHub par avoir à l'interface CLI sont nombreux.
 
 - Automatisation des actions : Une fois que le fichier `yml` est crée, le processus du déploiement est automatisé. Le processus de deploiement est donc en continue. Il suffit de push. Cependant, en ligne de commande CLI, nous devons écrire de nombreuses lignes de codes pour affectuer la même tâche.
 
-- Synchronisation avec Git : Le code sur Git et qui est déployer sur Azure seront toujours synchroniser. On n'aura pas ainsi des problèmes de versions 
+- Synchronisation avec Git : Le code sur Git et qui est déployer sur Azure seront toujours synchroniser. On n'aura pas ainsi des problèmes de versions. 
 
 - workflow réutilisable : le code pour le déploiement aura toujours la même structure. On peut le réutiliser pour d'autre deploiement en changement uniquement quelques données.
 
 - Vérifications et suivi du déploiement :
 Grâce à l'interface de GutHub, on peut suivre les déploiement et voir les problèmes. Ainsi, cela est plus facile à résoudre les problèmes.
-
--
