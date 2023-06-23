@@ -183,6 +183,17 @@ On a rencontré un problème en mettant notre projet sur GitHub. Vu que le dossi
 - tp4/terraform.tfstate
 - tp4/terraform.tfstate.backup
 
+## 9) <u>Avantage de Terraform</u>
+
+Terraform a plusieurs intérêt par rapport à l'interface utilisateur et cli : 
+- Automatisation de la création des ressources/Reproductibilité : Une fois le code écrit pour la création des ressources, on peut l'adapter pour les autres ressources crées. 
+
+- Gestion des modifications : nous avons le contrôle sur les ressources crées. Grâce au Terraform plan, nous pouvons vérifier les changements avant de les appliquer.
+
+- Utilisable avec plusieurs Clouds : On peut créer des ressources avec le même code sur plusieurs clouds. On n'est pas obligé de s'adapter aux clouds utilisés pour créer des services.
+
+- Accélération des créations de ressources : Avec de nombreux modules de Terraform, nous pouvons créer des ressources de manière rapide. 
+
 
 
 
