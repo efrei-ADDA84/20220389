@@ -1,34 +1,34 @@
 variable "region" {
-  type = string
+  type    = string
   default = "france central"
 }
 
 variable "azure_resource_group" {
-  type = string
+  type    = string
   default = "ADDA84-CTP"
 }
 
 variable "network" {
-  type = string
+  type    = string
   default = "network-tp4"
 }
 
 variable "subnet" {
-  type = string
+  type    = string
   default = "internal"
 }
 
 variable "vm_size" {
-  type = string
+  type    = string
   default = "Standard_D2s_v3"
 }
 
 variable "user_admin" {
-  type = string
+  type    = string
   default = "devops"
 }
 
 variable "os" {
-  type = string
+  type    = string
   default = "Ubuntu 16.04-LTS"
 }

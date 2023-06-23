@@ -9,7 +9,7 @@ resource "azurerm_linux_virtual_machine" "my_terraform_vm" {
   resource_group_name   = var.azure_resource_group
   network_interface_ids = [azurerm_network_interface.terraform_network_interface.id]
   size                  = var.vm_size
-  
+
   os_disk {
     name                 = "20220389_OS"
     caching              = "ReadWrite"
